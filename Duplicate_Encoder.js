@@ -22,7 +22,7 @@ function duplicateEncode(word) {
    var myArray = word.split("");
 
    myArray.forEach(function(item, index) {
-      // var myregex = /[(){}.]/
+       
        if (/[(){}.]/.test(item)) {
            item = "\\" + item;
        }

@@ -3,7 +3,6 @@ function duplicateEncode(word){
       .toLowerCase()
       .split('')
       .map( function (a, i, w) {
-        console.log(w.lastIndexOf(a));
         return w.indexOf(a) == w.lastIndexOf(a) ? '(' : ')'
       })
       .join('');
